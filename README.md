@@ -1,17 +1,24 @@
-**Hardware Verification Infrastrucutre Demo For AMD**
+# Hardware Verification Infrastructure Demo (AMD)
 
-*Overview*
+### Overview
+This is a **full-stack application** demonstrating a simplified hardware verification infrastructure.  
+It integrates several layers of the tech stack into one cohesive workflow:
 
-This is a full stack app which employs the following workflow:
+- **React** frontend for test control and real-time visualization  
+- **FastAPI** backend orchestrating test execution  
+- **C++** multithreaded test runner for parallel execution  
+- Each thread runs **Verilog testbenches** (same test with randomized parameters)  
+- **Python generator** manages process spawning and streams live updates to the dashboard  
 
-- React frontend for test triggering and data visualization
-- FastAPI backend
-- Backend spawns C++ multithreaded test runner
-- C++ threads each execute Verilog testbenches (the same one with some randomization in this case)
-- Using a Generator pattern in a Python process which spawns the C++ runner, live updates come through to the dashboard as the tests are running
+---
 
-[![Watch the video](https://img.youtube.com/vi/_zO66PiaDEo/maxresdefault.jpg)](https://www.youtube.com/watch?v=_zO66PiaDEo)
+### 🎥 Demo
 
-I created this to learn more about hardware verification infrastructure!
+[![Watch the demo video](https://img.youtube.com/vi/_zO66PiaDEo/maxresdefault.jpg)](https://www.youtube.com/watch?v=_zO66PiaDEo)
 
-Although it is rather simple and merely a demo, I found this really quite interesting and fun.
+---
+
+### About This Project
+I built this to explore how **hardware verification infrastructure** is structured in practice — from test generation to dashboard visualization.  
+
+Although this is a simplified demo, it was a **really fun and insightful project**, blending **software engineering, parallel computing, and hardware simulation** concepts together.
