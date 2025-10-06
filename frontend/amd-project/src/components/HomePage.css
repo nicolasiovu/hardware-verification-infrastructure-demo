@@ -1,0 +1,88 @@
+/* HomePage.css rewritten for full-width layout */
+
+.home-page {
+  display: flex;
+  flex-direction: column; /* stack content vertically */
+  align-items: stretch;   /* stretch children full width */
+  min-height: 100vh;
+  background-color: #111827; /* optional: match app bg */
+  color: #ffffff;
+  padding: 32px; /* optional padding around content */
+}
+
+.home-container {
+  width: 100%;       /* fill the parent horizontally */
+  padding: 32px 0;   /* optional top/bottom padding */
+  box-sizing: border-box;
+}
+
+.home-title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.home-subtitle {
+  color: #9ca3af;
+  text-align: center;
+  margin-bottom: 48px;
+  font-size: 16px;
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+  width: 100%;
+}
+
+.action-button {
+  padding: 48px;
+  border-radius: 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  color: #ffffff;
+  font-size: 18px;
+  transition: all 0.3s;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+  min-height: 300px;
+  justify-content: center;
+}
+
+.action-button.blue {
+  background-color: #2563eb;
+}
+
+.action-button.blue:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.action-button.green {
+  background-color: #16a34a;
+}
+
+.action-button.green:hover {
+  background-color: #15803d;
+  transform: translateY(-2px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.action-button h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.action-button p {
+  opacity: 0.9;
+  font-size: 16px;
+}
+

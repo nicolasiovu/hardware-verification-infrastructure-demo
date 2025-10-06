@@ -1,0 +1,47 @@
+.examine-page {
+  width: 100%;        /* fill full browser width */
+  max-width: none;    /* remove previous max-width restriction */
+  padding: 48px;      /* keep spacing around content */
+  box-sizing: border-box;
+}
+
+.batches-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.batch-card {
+  background-color: #1f2937;
+  padding: 28px 32px;
+  border-radius: 12px;
+  border: 1px solid #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+}
+
+.batch-card:hover {
+  background-color: #2d3748;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3);
+}
+
+.batch-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.batch-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.batch-date {
+  color: #9ca3af;
+  font-size: 15px;
+}
+
