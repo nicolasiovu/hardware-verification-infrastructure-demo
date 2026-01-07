@@ -21,4 +21,6 @@ It integrates several layers of the tech stack into one cohesive workflow:
 ### About This Project
 I built this to explore how **hardware verification infrastructure** is structured in practice — from test generation to dashboard visualization.  
 
+Test commit
+
 Although this is a simplified demo, it was a **really fun and insightful project**, blending **software engineering, parallel computing, and hardware simulation** concepts together.
